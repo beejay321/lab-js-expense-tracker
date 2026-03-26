@@ -22,8 +22,8 @@ class Income extends Entry {
 // Expense
 class Expense extends Entry {
   constructor(date, amount, description, paid) {
-    // this.paid = paid;
     super(date, amount, description);
+    this.paid = paid;
     this.type = "expense";
   }
   getFormattedAmount() {
